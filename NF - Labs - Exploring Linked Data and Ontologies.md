@@ -148,6 +148,5 @@ http://motools.sourceforge.net/event/event.html#place
       <fedora:hasTransactionProvider rdf:resource="http://serverip:8080/fcrepo/rest/fcr:tx" />
    </rdf:Description>
 </rdf:RDF>
-
-
+'''
 
