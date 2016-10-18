@@ -63,7 +63,7 @@ Individual can undertake the exercises on their own or in discussion with peers.
 - vakeeswaran@gmail.com
 - natkeeran@gmail.com
 
-####Technical Notes
+###Technical Notes
  1. Fedora Insert Properties
   - insert Literal Value
 
@@ -117,15 +117,6 @@ LIMIT 25
 ####Importing/Exporting Resources from Fedora
 java -jar target/fcrepo-import-export-0.0.1-SNAPSHOT.jar --mode export --resource http://serverip:8080/fcrepo/rest/ --descDir data --binDir data --rdfExt .jsonld --rdfLang application/ld+json
 
-####Ontology
-- Place
-
-[http://www.geonames.org/ontology/documentation.html](http://www.geonames.org/ontology/documentation.html)
-
-[https://www.w3.org/2003/01/geo/wgs84_pos#lat](https://www.w3.org/2003/01/geo/wgs84_pos#lat)
-
-####Event
-http://motools.sourceforge.net/event/event.html#place
 
 ###Sample RDF
 
