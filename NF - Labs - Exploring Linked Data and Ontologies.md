@@ -130,7 +130,7 @@ http://motools.sourceforge.net/event/event.html#place
 ###Sample RDF
 '''xml
 
-'<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#" xmlns:fedora="http://fedora.info/definitions/v4/repository#" xmlns:fedoraconfig="http://fedora.info/definitions/v4/config#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:image="http://www.modeshape.org/images/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:ldp="http://www.w3.org/ns/ldp#" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:mode="http://www.modeshape.org/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:premis="http://www.loc.gov/premis/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:test="info:fedora/test/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <rdf:Description rdf:about="http://serverip:8080/fcrepo/rest/">
       <fedora:lastModified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-23T15:05:16.836Z</fedora:lastModified>
