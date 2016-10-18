@@ -1,4 +1,4 @@
-#NF - Labs - Exploring Linked Data and Ontologies.md
+#NF - Labs - Exploring Linked Data and Ontologies
 ##Purpose
 The purpose of this exercise is to better understand linked data and ontologies.  Specifially, we will make use of 
 Fedora [http://fedorarepository.org](http://fedorarepository.org) Linked Data Platform and Apache Jena Fuseki [https://jena.apache.org/documentation/fuseki2/index.html](https://jena.apache.org/documentation/fuseki2/index.html) SPARQL server.  
