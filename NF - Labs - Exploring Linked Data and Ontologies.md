@@ -1,21 +1,21 @@
-#NF - Labs - Exploring Linked Data and Ontologies
-##Purpose
+# NF - Labs - Exploring Linked Data and Ontologies
+## Purpose
 The purpose of this exercise is to better understand linked data and ontologies.  Specifially, we will make use of 
 Fedora [http://fedorarepository.org](http://fedorarepository.org) Linked Data Platform and Apache Jena Fuseki [https://jena.apache.org/documentation/fuseki2/index.html](https://jena.apache.org/documentation/fuseki2/index.html) SPARQL server.  
 We will make use of dublin core ontology to describe creative works and link them to other resources such as people and places.
 
-###See Also:
+### See Also:
 [NF Core Concepts Ontology - Prototype](https://docs.google.com/document/d/13jLu-OnyDwhw4LLOay6JBzhLxSioXJRjD2PjePTtRUA/edit)
 
-###Audience
+### Audience
 Anyone interested in applying Linked Data to problems in the Tamil context is welcome.  Though the exercises are geared towards the technically inclined, the discussion will be cross-disciplinary  
 
-###Required Materials and Preparation
+### Required Materials and Preparation
 * Some background reading about Linked Data and Ontologies is helpful.
 * A VM or server to install applications (optional, we will consider providing VMs if requested
 
 
-###Learning Objectives
+### Learning Objectives
 1. Creating RDF resources in Fedora
 2. Creating RDF resources with non literal property values in Fedora
 3. Exporting resource into serialized formats such as RDF/XML or JSON-LD using CURL
@@ -25,16 +25,16 @@ Anyone interested in applying Linked Data to problems in the Tamil context is we
 7. Querying and displaying RDF and binary files stored in Fedora 
 8. Explore possibilities of building an Ontology for Noolaham content
 
-###How To
+### How To
 Individual can undertake the exercises on their own or in discussion with peers.  If there is sufficient interest, we will have a skype or irc/conference meeting to discuss the concepts, technologies and applications.
 
-###Exercise Milestones
+### Exercise Milestones
 - Setup fedora vagrant or docker
 - Create resources using a simple ontology
 - Query resources using SPARQL
 - How to interact with Non RDF Resources (binary files)
 
-###Documentation/References
+### Documentation/References
 - [https://wiki.duraspace.org/display/FEDORA46/Feature+Tour](https://wiki.duraspace.org/display/FEDORA46/Feature+Tour)
 - [https://wiki.duraspace.org/display/FEDORA4x/LDP-PCDM-F4+In+Action#LDP-PCDM-F4InAction-Book-CreateDirectContainer](https://wiki.duraspace.org/display/FEDORA4x/LDP-PCDM-F4+In+Action#LDP-PCDM-F4InAction-Book-CreateDirectContainer)
 - [https://github.com/projecthydra/hydra/wiki/LDP-Containers-for-the-perplexed#indirect-container](https://github.com/projecthydra/hydra/wiki/LDP-Containers-for-the-perplexed#indirect-container)
@@ -43,12 +43,12 @@ Individual can undertake the exercises on their own or in discussion with peers.
 - [LDP Primer - https://dvcs.w3.org/hg/ldpwg/raw-file/tip/ldp-primer/ldp-primer.html](LDP Primer - https://dvcs.w3.org/hg/ldpwg/raw-file/tip/ldp-primer/ldp-primer.html)
 - [http://islandora.ca/sites/default/files/Introduction%20and%20Hands-on%20with%20Fedora%204.pdf](http://islandora.ca/sites/default/files/Introduction%20and%20Hands-on%20with%20Fedora%204.pdf)
 
-###Installation and Tools
+### Installation and Tools
 - [https://hub.docker.com/r/yinlinchen/fcrepo4-docker/](https://hub.docker.com/r/yinlinchen/fcrepo4-docker/) (Recommended)
 - [https://github.com/fcrepo4-exts/fcrepo4-vagrant](https://github.com/fcrepo4-exts/fcrepo4-vagrant)
 - [https://github.com/fcrepo4-labs/fcrepo-import-export](https://github.com/fcrepo4-labs/fcrepo-import-export)
 
-###Concepts
+### Concepts
 - Linked Data
 - RDF (subject predicate object)
 - RDF properties
@@ -59,11 +59,11 @@ Individual can undertake the exercises on their own or in discussion with peers.
 - Triplestore
 - SPARQL Query
 
-###Contact
+### Contact
 - vakeeswaran@gmail.com
 - natkeeran@gmail.com
 
-###Technical Notes
+### Technical Notes
  1. Fedora Insert Properties
   - insert Literal Value
 
@@ -75,7 +75,7 @@ WHERE { }
 INSERT {<> dc:creator <http://serverip:8080/fcrepo/rest/writer1> .}
 WHERE { }
 
-####SPARQL
+#### SPARQL
  - Get all triples
  
 PREFIX ldp: <http://www.w3.org/ns/ldp#>
@@ -114,11 +114,11 @@ WHERE {
 
 LIMIT 25
 
-####Importing/Exporting Resources from Fedora
+#### Importing/Exporting Resources from Fedora
 java -jar target/fcrepo-import-export-0.0.1-SNAPSHOT.jar --mode export --resource http://serverip:8080/fcrepo/rest/ --descDir data --binDir data --rdfExt .jsonld --rdfLang application/ld+json
 
 
-###Sample RDF
+### Sample RDF
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
